@@ -1,5 +1,6 @@
 ##1. Classes design
 
+<<<<<<< HEAD
 ┌─────────────────────────────────┐                   ┌─────────────────────────────────┐
 │                                 │                   │                                 │
 │  class Till                     │                   │  class Order                    │
@@ -42,5 +43,3 @@ class Receipt
 menu item - number of items - price per item
 tax deducted 
 total for the order
- 
-

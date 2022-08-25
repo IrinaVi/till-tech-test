@@ -24,5 +24,9 @@ class TestOrder(unittest.TestCase):
             order1.add_to_order('', 2)
         self.assertEqual(str(exc.exception), "Please choose only items from the menu and specify the correct number of items")
 
+        with self.assertRaises(Exception) as exc:
+            order1.add_to_order('Cafe Latte', 0.2)
+        self.assertEqual(str(exc.exception), "Please choose only items from the menu and specify the correct number of items")
+
 if __name__ == '__main__':
     unittest.main()

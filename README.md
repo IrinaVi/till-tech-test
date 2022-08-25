@@ -50,16 +50,16 @@ https://www.python.org/downloads/
 ## How to use the project
 First, create an object from the Order, Till and Receipt classes:  
 
-`order = Order()`
-`till = Till()`
-`receipt = Receipt()`
+`order = Order()`  
+`till = Till()`  
+`receipt = Receipt()`  
 
 Then, add your order using add_to_order method and calculate total and tax (don't forget to pass the order to this method):
 
-`order.add_to_order('Single Espresso', 3)`
-`till.calculate_total(order.total_order())`
-`till.calculate_tax()`
+`order.add_to_order('Single Espresso', 3)`  
+`till.calculate_total(order.total_order())`  
+`till.calculate_tax()`  
 
 To get the receipt, call the following methods:
-`receipt.format_receipt(order.total_order(),till.get_total_and_tax())`
-`receipt.get_final_receipt`
+`receipt.format_receipt(order.total_order(),till.get_total_and_tax())`  
+`receipt.get_final_receipt`  

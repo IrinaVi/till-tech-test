@@ -1,5 +1,9 @@
-class Till():
-    pricelist = {
+cafe_data = {
+    "shopName": "The Coffee Connection",
+    "address": "123 Lakeside Way",
+    "phone": "16503600708",
+    "prices":
+      {
         "Cafe Latte": 4.75,
         "Flat White": 4.75,
         "Cappucino": 3.85,
@@ -16,10 +20,4 @@ class Till():
         "Chocolate Chip Muffin": 4.05,
         "Muffin Of The Day": 4.55
       }
-#{'total': 2, 'tax': 0.2}
-    def __init__(self):
-        self.total_and_tax = {}
-
-    def calculate_total(self, order):
-        #we need to loop through each item in order dict, find it in the pricelist and take the price
-        return order
+  }

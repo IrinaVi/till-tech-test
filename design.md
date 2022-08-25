@@ -1,6 +1,4 @@
 ##1. Classes design
-
-<<<<<<< HEAD
 ┌─────────────────────────────────┐                   ┌─────────────────────────────────┐
 │                                 │                   │                                 │
 │  class Till                     │                   │  class Order                    │
@@ -8,7 +6,7 @@
 │  - calculates the total for the │                   │                                 │
 │                                 │                   │  - adds a menu item to the order│
 │order                            │                   │                                 │
-│                                 ├──────────────────►│  - returns order                │
+│                                 ├                   │  - returns order                │
 │ - calculates tax                │                   │                                 │
 │                                 │◄──────────────────┤                                 │
 │ - returns total, amount of tax  │                   │                                 │

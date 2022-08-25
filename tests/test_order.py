@@ -14,5 +14,15 @@ class TestOrder(unittest.TestCase):
         order2.add_to_order('Chocolate Chip Muffin', 2)
         self.assertEqual(order2.total_order(), {'Affogato': 3, 'Cafe Latte': 1, 'Chocolate Chip Muffin': 2})
 
+    def test_error_handling(self):
+        order1 = Order()
+        with self.assertRaises(Exception) as exc:
+            order1.add_to_order('test', 2)
+        self.assertEqual(str(exc.exception), "Please choose only items from the menu and specify the correct number of items")
+
+        with self.assertRaises(Exception) as exc:
+            order1.add_to_order('', 2)
+        self.assertEqual(str(exc.exception), "Please choose only items from the menu and specify the correct number of items")
+
 if __name__ == '__main__':
     unittest.main()
